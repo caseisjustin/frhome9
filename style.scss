@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blueviolet;
+
+    .catgr_list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        list-style: none;
+
+        .catgr_nav_item {
+            border: 1px solid #beff27;
+            border-radius: 5px;
+            padding: 5px 10px;
+
+            &:hover {
+                background-color: aquamarine;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            &:active {
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-direction: column;
+    padding-top: 30px;
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            text-align: center;
+            width: calc(100% / 5 - 2rem);
+            height: 500px;
+            border: 1px solid yellow;
+            padding: 20px 10px;
+
+            & img{
+                height: 100%;
+            }
+
+            & button{
+                padding: 5px 20px;
+                border: 1px solid green;
+                background-color: #beff27;
+                border-radius: 5px;
+
+                &:hover{
+                    background-color: #648f00;
+                }
+
+                &:active{
+                    background-color: #beff27;
+                }
+            }
+        }
+    }
+
+    & button{
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #648f00;
+        border: none;
+
+        &:hover{
+            background-color: #beff27;
+        }
+
+        &:active{
+            background-color: #648f00;
+        }
+    }
+}
